@@ -6,10 +6,10 @@ colors = colorgram.extract('sample.jpeg', 16)
 color_list = []
 
 
-def random_color(colors):
-    for c in colors:
-        tuple = (c.rgb[0], c.rgb[1], c.rgb[2])
-        color_list.append(tuple)
+def random_color(color_samples):
+    for c in color_samples:
+        color_tuple = (c.rgb[0], c.rgb[1], c.rgb[2])
+        color_list.append(color_tuple)
     return color_list
 
 
@@ -33,8 +33,8 @@ def hirst():
     timmy.forward(60)
 
 
-for n in range(10):
-    for n in range(10):
+for row in range(10):
+    for column in range(10):
         hirst()
     timmy.setheading(90)
     timmy.forward(60)
@@ -43,4 +43,3 @@ for n in range(10):
 
 screen = turtle.Screen()
 screen.exitonclick()
-
